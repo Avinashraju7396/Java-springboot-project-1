@@ -16,7 +16,7 @@ RUN mvn clean package -Dspring.profiles.active=build -DskipTests
 RUN mv ./target/*.jar app.jar
 
 # Set environment variables for Spring Boot
-ENV SPRING_DATASOURCE_URL="jdbc:mysql://database-1.cuta28qqclk5.us-east-1.rds.amazonaws.com:3306/datastore?createDatabaseIfNotExist=true"
+ENV SPRING_DATASOURCE_URL="jdbc:mysql://database-1.c8zywq2ccoms.us-east-1.rds.amazonaws.com:3306/datastore?createDatabaseIfNotExist=true"
 ENV SPRING_DATASOURCE_USERNAME="admin"
 ENV SPRING_DATASOURCE_PASSWORD="Cloud123"
 ENV SPRING_JPA_HIBERNATE_DDL_AUTO="update"
